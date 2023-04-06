@@ -1,5 +1,24 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+}
 /* Set the size of the div element that contains the map */
 #map {
+    align-items: center;
+    grid-row: 2/9;
+    grid-column: 1/13;
     height: 1000px; /* The height is 400 pixels */
     width: 100%; /* The width is the width of the web page */
+}
+
+.title{
+  
+    text-align: center;
+    grid-column: 5/8;
+    grid-row: 1/4;
+  
+    font-family: Old Standard TT, sans-serif;
+    font-size: large;
+    text-decoration: underline;
 }
